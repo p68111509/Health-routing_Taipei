@@ -13,8 +13,8 @@ from pyproj import Transformer
 import base64
 
 # ========== 系統參數 ==========
-# map_center = [25.04, 121.56]  # 台北市中心
-map_center = [24.1477, 120.6736]  # 台中市中心
+map_center = [25.04, 121.56]  # 台北市中心
+# map_center = [24.1477, 120.6736]  # 台中市中心
 
 # ========== 關閉雙擊放大 ==========
 class DisableDoubleClickZoom(MacroElement):
@@ -29,7 +29,7 @@ class DisableDoubleClickZoom(MacroElement):
 # ========== 讀取圖 ==========
 @st.cache_resource
 def load_graph():
-    pkl_path = r"data/台中路網_濃度與暴露_最大連通版.pkl"
+    pkl_path = r"data/雙北基隆路網_濃度與暴露_最大連通版.pkl"
     with open(pkl_path, "rb") as f:
         G = pickle.load(f)
 
@@ -172,7 +172,7 @@ with col1:
                 font-weight: 500;
                 color: #666666;
             ">
-                台中市
+                大台北地區
             </span>
         </h1>
     """, unsafe_allow_html=True)
