@@ -1,0 +1,11 @@
+streamlit
+folium
+streamlit-folium
+pandas
+networkx
+scipy
+shapely
+pyproj
+requests
+jinja2
+
